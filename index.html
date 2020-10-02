@@ -8,30 +8,51 @@
 				width: 15.625rem;
 				height: 2.5rem;
 				position: fixed;
-				top: 50%;
+				top: 40%;
 				left: 0;
 				right: 0;
 				margin: 0 auto;
+					
 			}
 		</style>
 		<style>
 			.search_t{
-				background:lightgray;
-				opacity: .7;
+				background:rgba(255,255,255,0.5);
 				height: 2.5rem;
 				text-align: center;
 				font-size: large;
 				width: 15.625rem;
 				font-family: "楷体";
+				color: black;
+				border-radius: 20px;
+				border: 1px solid rgba(255,255,255,0.5);
+				outline: none;
 			}
 		</style>
+		<style>
+		        input::-webkit-input-placeholder{
+		            color:white;
+		        }
+		        input::-moz-placeholder{  
+		            color:white;
+		        }
+		        input:-moz-placeholder{    
+		            color:white;
+		        }
+		        input:-ms-input-placeholder{  
+		            color:white;
+		        }
+		</style>
+		
 	</head>
 	<body background="D:\Edge download\星空.jpg"
 	style=" background-repeat:no-repeat ;
 	background-size:100% 100%;
 	background-attachment: fixed;">
 		<form class="search" action="http://www.baidu.com/baidu" target="_blank">
-		 <input class="search_t" type=text name=word size=25 placeholder="search">
+		 <input class="search_t" type=text name=word size=25 placeholder="Search" \
+		 onfocus="this.placeholder = ''" onblur="this.placeholder = 'Search'">
+		 <!-点击时取消placeholder->
 		</form>
 		
 	</body>
